@@ -12,7 +12,11 @@
   },
   "homepage": "https://github.com/yamadayuki/bs-axios",
   "keywords": [
-    "BuckleScript"
+    "BuckleScript",
+    "axios",
+    "ajax",
+    "http",
+    "xhr"
   ],
   "license": "MIT",
   "main": "lib/js/src/Axios.bs.js",
