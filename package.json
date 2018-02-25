@@ -1,7 +1,7 @@
 {
   "name": "@yamadayuki/bs-axios",
   "description": "axios bindings for ReasonML",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "yamadayuki",
   "bugs": "https://github.com/yamadayuki/bs-axios/issues",
   "dependencies": {
