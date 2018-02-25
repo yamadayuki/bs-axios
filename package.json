@@ -1,20 +1,31 @@
 {
   "name": "@yamadayuki/bs-axios",
-  "version": "0.1.0",
-  "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world"
+  "description": "axios bindings for ReasonML",
+  "version": "0.0.0",
+  "author": "yamadayuki",
+  "bugs": "https://github.com/yamadayuki/bs-axios/issues",
+  "dependencies": {
+    "axios": "^0.18.0"
   },
-  "keywords": [
-    "BuckleScript"
-  ],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "bs-platform": "^2.2.0"
   },
-  "dependencies": {
-    "axios": "^0.18.0"
+  "homepage": "https://github.com/yamadayuki/bs-axios",
+  "keywords": [
+    "BuckleScript"
+  ],
+  "license": "MIT",
+  "main": "lib/js/src/Axios.bs.js",
+  "repository": {
+    "url": "https://github.com/yamadayuki/bs-axios"
+  },
+  "scripts": {
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world",
+    "release": "npm run release-patch",
+    "release-major": "npm version major && git push origin master --tags && npm publish --access=public",
+    "release-minor": "npm version minor && git push origin master --tags && npm publish --access=public",
+    "release-patch": "npm version patch && git push origin master --tags && npm publish --access=public",
+    "start": "bsb -make-world -w"
   }
 }
